@@ -1,0 +1,12 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+@import "./styles/navbar";
+@import "./styles/sidebar";
+@import "./styles/hero";
+@import "./styles/preloader";

@@ -1,0 +1,74 @@
+.yt-navbar {
+  height: 50px;
+  padding: 10px;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transform: translateY(-100%);
+  transition: transform 0.7s ease;
+  .yt-navbar-left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    .logo {
+      height: 70%;
+      display: flex;
+      margin-left: 20px;
+      img {
+        height: 100%;
+      }
+      :hover {
+        cursor: pointer;
+      }
+    }
+    .side-menu-open {
+      height: 80%;
+      width: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      cursor: pointer;
+      .line {
+        width: 100%;
+        border-top: 2px solid black;
+      }
+    }
+  }
+  .yt-navbar-middle {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .input-group {
+      height: 100%;
+      input {
+        height: 100%;
+      }
+      button {
+        height: 100%;
+        padding: 0 25px;
+        font-size: 15px;
+        border: 1px solid rgb(170, 170, 170);
+      }
+    }
+  }
+  .yt-navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 20px;
+    color: rgb(110, 110, 110);
+    i {
+      margin-right: 30px;
+    }
+    i:hover {
+      cursor: pointer;
+      color: rgb(139, 139, 139);
+    }
+  }
+}

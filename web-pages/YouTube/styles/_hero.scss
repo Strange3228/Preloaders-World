@@ -1,0 +1,33 @@
+.videos {
+  margin-left: 100px;
+  background-color: #f9f9f9;
+  margin-top: 50px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  .card {
+    margin: 30px 25px;
+    border: none;
+    background-color: transparent;
+    img {
+      position: relative;
+    }
+    .card-body {
+      padding: 10px 0 0 0;
+      .chanel-logo {
+        img {
+          width: 100%;
+          border-radius: 50%;
+        }
+      }
+      .card-add {
+        padding-left: 0;
+        .card-title {
+          margin-bottom: 0px;
+        }
+        .card-text {
+          line-height: 15px;
+        }
+      }
+    }
+  }
+}
