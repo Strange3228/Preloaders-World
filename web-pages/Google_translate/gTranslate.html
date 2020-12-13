@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Preloader</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--PRELOADER-->
+    <div class="preloader">
+        <h1 class="typing">Hello</h1>
+        <div class="loader">Loading...</div>
+    </div>
+
+    <!--NAVBAR-->
+    <nav class="gtranslate-navbar row">
+        <div class="gtranslate-navbar-left col-6">
+            <div class="side-menu-open">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="logo">
+                <img src="./img/Logo.svg" alt="">
+            </div>
+        </div>
+        <div class="gtranslate-navbar-right col-6">
+            <i class="fas fa-th"></i>
+            <i class="far fa-smile-wink" style="margin-right: 0px; font-size: 30px;"></i>
+        </div>
+    </nav>
+
+    <!--HERO-->
+    <div class="back-grey"></div>
+    <div class="container hero">
+        <div class="control-buttons">
+            <button type="button" class="btn btn-outline-primary active"><i class="fas fa-font"></i>Text</button>
+            <button type="button" class="btn btn-outline-primary"><i class="fas fa-file"></i>Documents</button>
+        </div>
+        <div class="translate-section row">
+            <i class="fas fa-arrows-alt-h arrows"></i>
+            <div class="choose-language col-6">
+                <div class="language">
+                    <h6 class="active">DETECT LANGUAGE</h6>
+                    <h6>ENGLISH</h6>
+                    <h6>SPANISH</h6>
+                    <h6>RUSSIAN</h6>
+                </div>
+                <textarea style="border-right: 1px solid rgb(214, 214, 214);"></textarea>
+            </div>
+            <div class="choose-language col-6">
+                <div class="language" style="padding-left: 45px;">
+                    <h6 class="active">GERMAN</h6>
+                    <h6>FRENCH</h6>
+                    <h6>FILIPINO</h6>
+                </div>
+                <textarea placeholder="Translation"></textarea>
+            </div>
+        </div>
+        <div class="additional-buttons">
+            <div class="btn-block">
+                <div class="circle">
+                    <i class="fas fa-history"></i>
+                </div>
+                <p>History</p>
+            </div>
+            <div class="btn-block">
+                <div class="circle">
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Saved</p>
+            </div>
+            <div class="btn-block">
+                <div class="circle">
+                    <i class="fas fa-user-friends"></i>
+                </div>
+                <p>Contribute</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="./js/preloader.js"></script>
+</body>
+</html>

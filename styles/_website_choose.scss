@@ -1,3 +1,56 @@
+.logo {
+  position: fixed;
+  width: 800px;
+  bottom: 0px;
+  right: 0%;
+}
 .choose-site-section {
   padding: 50px !important;
+  min-height: 100vh;
+  h1 {
+    font-size: 50px;
+    margin-top: -25px;
+    letter-spacing: 10px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px 0px;
+    background-color: aliceblue;
+  }
+  .choose-site {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.card {
+  margin: 20px 20px;
+  height: 400px !important;
+  .img {
+    border-bottom: 1px solid grey !important;
+  }
+  .go-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo {
+    width: 300px;
+  }
+}
+@media (max-width: 460px) {
+  .choose-site-section {
+    h1 {
+      font-size: 25px;
+    }
+  }
+}
+
+@media (min-width: 1870px) {
+  .card {
+    height: 500px !important;
+  }
 }

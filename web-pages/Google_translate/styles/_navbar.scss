@@ -1,0 +1,55 @@
+.gtranslate-navbar {
+  height: 70px;
+  padding: 18px;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(207, 207, 207, 0.692);
+  z-index: 101;
+  margin-left: 0px;
+  .gtranslate-navbar-left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    .logo {
+      height: 90%;
+      display: flex;
+      margin-left: 20px;
+      img {
+        height: 100%;
+      }
+      img:hover {
+        cursor: pointer;
+      }
+    }
+    .side-menu-open {
+      height: 50%;
+      width: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      .line {
+        width: 100%;
+        border-bottom: 2px solid rgb(71, 71, 71);
+      }
+    }
+  }
+  .gtranslate-navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 20px;
+    color: rgb(110, 110, 110);
+    i {
+      margin-right: 30px;
+    }
+    i:hover {
+      cursor: pointer;
+      color: rgb(139, 139, 139);
+    }
+  }
+}
