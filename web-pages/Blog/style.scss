@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.top-section {
+  position: relative;
+  height: 690px;
+  background: url("./Img/Back.jpg");
+  background-position: center;
+  background-size: cover;
+}
+nav {
+  width: 70%;
+  margin: auto;
+  padding: 10px 20px;
+  display: flex;
+  //FOR ANIMATION
+  opacity: 0;
+  transform: translateY(-100%);
+  border: 1px solid rgb(199, 199, 199);
+  background-color: rgba(92, 92, 92, 0.589);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  //
+  .logo {
+    margin-right: 50px;
+    color: white;
+    font-size: 20px;
+    text-shadow: black 0px 0px 5px;
+  }
+  .nav-items {
+    display: flex;
+    height: 100%;
+    list-style: none;
+    li {
+      margin: 0px 30px;
+      height: 100%;
+      display: flex;
+      color: rgb(219, 219, 219);
+      align-items: flex-end;
+      font-weight: bold;
+      font-size: 17px;
+      cursor: pointer;
+    }
+  }
+  .nav-contacts {
+    font-weight: bold;
+    color: white;
+    text-shadow: black 0px 0px 5px;
+    flex: 1;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.man {
+  position: absolute;
+  height: 90%;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.heh {
+  width: 100%;
+  height: 1000px;
+  h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+  }
+}
+
+.preloader {
+  background: url("./Img/Back.jpg");
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 100vh;
+  width: 100%;
+  //animation: preloadEndMain 2s ease forwards 1s;
+  overflow: hidden;
+  .man {
+    transform: translateY(110%);
+    //animation: chelikiShow 1s ease forwards 3s;
+  }
+  .loader {
+    border: 20px solid #a0a0a09f;
+    border-radius: 50%;
+    border-top: 20px solid #3d3d3d;
+    width: 220px;
+    height: 220px;
+    animation: spin 3s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+  }
+}
+
+@keyframes chelikiShow {
+  0% {
+    transform: translateX(-50%) translateY(110%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0%);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes preloadEnd {
+  0% {
+    height: 100vh;
+  }
+  100% {
+    height: 690px;
+  }
+}
+
+@keyframes showNav {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes additionalInfo {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}

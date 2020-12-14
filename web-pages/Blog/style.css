@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.top-section {
+  position: relative;
+  height: 690px;
+  background: url("./Img/Back.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+  width: 70%;
+  margin: auto;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  border: 1px solid #c7c7c7;
+  background-color: rgba(92, 92, 92, 0.589);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+nav .logo {
+  margin-right: 50px;
+  color: white;
+  font-size: 20px;
+  text-shadow: black 0px 0px 5px;
+}
+
+nav .nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  list-style: none;
+}
+
+nav .nav-items li {
+  margin: 0px 30px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #dbdbdb;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+nav .nav-contacts {
+  font-weight: bold;
+  color: white;
+  text-shadow: black 0px 0px 5px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.man {
+  position: absolute;
+  height: 90%;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.heh {
+  width: 100%;
+  height: 1000px;
+}
+
+.heh h1 {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.preloader {
+  background: url("./Img/Back.jpg");
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.preloader .man {
+  -webkit-transform: translateY(110%);
+          transform: translateY(110%);
+}
+
+.preloader .loader {
+  border: 20px solid #a0a0a09f;
+  border-radius: 50%;
+  border-top: 20px solid #3d3d3d;
+  width: 220px;
+  height: 220px;
+  -webkit-animation: spin 3s linear infinite;
+          animation: spin 3s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+@-webkit-keyframes chelikiShow {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(110%);
+            transform: translateX(-50%) translateY(110%);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(0%);
+            transform: translateX(-50%) translateY(0%);
+  }
+}
+
+@keyframes chelikiShow {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(110%);
+            transform: translateX(-50%) translateY(110%);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(0%);
+            transform: translateX(-50%) translateY(0%);
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@-webkit-keyframes preloadEnd {
+  0% {
+    height: 100vh;
+  }
+  100% {
+    height: 690px;
+  }
+}
+
+@keyframes preloadEnd {
+  0% {
+    height: 100vh;
+  }
+  100% {
+    height: 690px;
+  }
+}
+
+@-webkit-keyframes showNav {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes showNav {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes additionalInfo {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes additionalInfo {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+/*# sourceMappingURL=style.css.map */
